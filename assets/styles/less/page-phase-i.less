@@ -1,0 +1,108 @@
+
+.AudioSwap {
+
+
+  .Entry {
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+    height: 215px;
+    // border: 1px dotted gray;
+    padding-top: 30px;
+    cursor: pointer;
+
+  }
+
+  .EntryContent,
+  .EntryShim {
+    width: 500px;
+    height: 250px;
+    list-style: none;
+  }
+
+  .Entry .EntryContent {
+    padding: 0 25px;
+   }
+
+  .EntryShim { display: none; }
+  .Hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .Entry:hover{
+
+    z-index: 100;
+
+    .Hidden { display: block; opacity: 1;}
+
+    .EntryShim {
+      display: block;
+    }
+
+    .EntryContent {
+      box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50);
+      background: white;
+      position: absolute;
+      height: 400px;
+      margin-top: -90px;
+      padding-top: 30px;
+      z-index: 100;
+
+
+    }
+  }
+
+
+  .EntryTitle {
+    font-size: 27px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: lighter;
+  }
+
+  // AUDIO ENTRY
+
+  .AudioEntry {
+    float: left;
+    width: 50%;
+    // border: 1px dotted gray;
+
+  }
+
+  .AudioCircle,
+  .AudioName,
+  .AudioTitle
+   {
+    margin: 0 auto;
+    text-align: center;
+    width: 150px;
+  }
+
+  .AudioName {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .AudioCircle {
+    border: 10px solid gray;
+    width: 150px;
+    height: 150px;
+    display: block;
+    border-radius: 150px;
+  }
+
+  .AudioName {
+    text-transform: capitalize;
+    margin-top: 20px;
+  }
+  .AudioTitle {
+    opacity: .5;
+  }
+
+
+
+
+}

@@ -1,0 +1,30 @@
+.u-clearboth {
+  clear: both;
+}
+.u-innerWidth {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+body,
+div {
+  font-family: "proxima-nova", sans-serif;
+}
+.wrapper {
+  width: 100%;
+}
+.logo {
+  background: url("../../../assets/images/title.png") no-repeat left center;
+  display: block;
+  height: 40px;
+  width: 300px;
+  background-size: contain;
+  margin: 40px 0 0 50px;
+}
+.center {
+  text-align: center;
+  display: block;
+}
+.Entries {
+  margin: 50px 0 200px 0;
+}

@@ -1,0 +1,64 @@
+// page-comic-entry.less
+//
+
+.Panels {
+
+
+  .Panels-Navigation {
+
+    ul {
+      display: table;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+
+    li {
+      float: left;
+      list-style: none;
+      margin: 0 20px;
+    }
+
+    .is-activeWeek a {
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+     }
+     .is-currentWeek a {
+      font-weight: bold;
+     }
+  }
+
+
+  .EntryTitle {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+  .EntryPanel {
+    width: 100%;
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto 20px auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

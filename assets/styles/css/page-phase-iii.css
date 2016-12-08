@@ -1,0 +1,211 @@
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+small {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+h4 {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 27px;
+}
+.III-Content {
+  padding-top: 30px;
+}
+.III-Grid ul {
+  margin: 0 auto;
+  display: table;
+}
+.III-Grid ul li {
+  float: left;
+  display: block;
+  cursor: pointer;
+  list-style: none;
+  padding: 15px;
+  border: 1px solid transparent;
+}
+.III-Grid ul li:hover {
+  border: 1px solid #eeeeee;
+}
+.III-Grid ul li .image {
+  width: 100%;
+  height: 100%;
+  background-size: contain !important;
+}
+.III-Entry-Buttons button {
+  border-radius: 0;
+  background: none;
+  border: 1px solid #eeeeee;
+  margin: 0;
+  display: block;
+  width: 50%;
+  float: left;
+  padding: 10px 20px 15px 20px;
+  position: relative;
+  cursor: pointer;
+}
+.III-Entry-Buttons button:hover {
+  border: 1px solid gray;
+  z-index: 10;
+}
+.III-Entry-Buttons button:nth-child(1) {
+  text-align: right;
+}
+.III-Entry-Buttons button:nth-child(2) {
+  text-align: left;
+  margin-left: -1px;
+}
+.III-Entry-Buttons button.is-Showing {
+  background-image: url("../../../assets/images/close.png");
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  border: 1px solid gray;
+  z-index: 10;
+  opacity: .5;
+}
+.III-Entry-Buttons button.is-Showing:hover {
+  border: 1px solid black;
+  opacity: 1;
+}
+.III-Entry-Buttons button.is-Showing:hover h4,
+.III-Entry-Buttons button.is-Showing:hover small {
+  opacity: .4;
+}
+.III-Entry-Buttons button.is-Showing h4,
+.III-Entry-Buttons button.is-Showing small {
+  opacity: .7;
+  color: black;
+}
+.III-Entry-Buttons button.is-Showing:nth-child(1) {
+  background-position: 5% 20px;
+}
+.III-Entry-Buttons button.is-Showing:nth-child(2) {
+  background-position: 95% 20px;
+}
+.III-Nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  background: white;
+}
+.III-Nav .III-Single-Width {
+  padding: 20px 30px 0 30px;
+  border-top: 1px solid #eeeeee;
+}
+.III-Nav-Grid {
+  margin: 0 auto;
+  display: table;
+  width: 28px;
+  height: 28px;
+  background: url("../../../assets/images/grid.png");
+  background-size: 28px 28px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: none;
+  opacity: .3;
+}
+.III-Nav-Grid:hover {
+  opacity: .8;
+}
+.III-Nav-NextPrev {
+  width: 60px;
+  height: 30px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  border: none;
+  opacity: .5;
+  display: block;
+}
+.III-Nav-NextPrev:hover {
+  opacity: 1;
+}
+.III-Nav-Next,
+.III-Nav-HoldNext {
+  float: right;
+}
+.III-Nav-Previous,
+.III-Nav-HoldPrevious {
+  float: left;
+}
+.III-Nav-Next {
+  background: url("../../../assets/images/arrow-right.png");
+}
+.III-Nav-Previous {
+  background: url("../../../assets/images/arrow-left.png");
+}
+.III-Response {
+  width: 50%;
+}
+.III-Response h2 {
+  margin-bottom: 10px;
+}
+.ResponseText {
+  font-family: "calluna", serif;
+  font-size: 17px;
+  line-height: 25px;
+}
+.ResponseText a {
+  text-decoration: none;
+  border-bottom: 1px dotted gray;
+  color: black;
+}
+.ResponseText a:hover {
+  border-bottom: 1px solid black;
+}
+.ResponseText a:visited {
+  color: gray;
+}
+.ResponseText p {
+  padding-bottom: 20px;
+}
+.III-Single {
+  padding-bottom: 150px;
+}
+.III-Single-Width {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+.III-Single img {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+}
+.III-Single#show_sanju img,
+.III-Single#show_nate img {
+  width: 45%;
+  height: auto;
+  margin-top: 0;
+  padding-top: 0;
+}
+.III-Single .III-Response {
+  display: none;
+}
+.III-Single#show_sanju .III-Response-Sanju {
+  display: block;
+  float: left;
+}
+.III-Single#show_sanju img {
+  float: right;
+}
+.III-Single#show_nate .III-Response-Nate {
+  display: block;
+  float: right;
+}
+.III-Single#show_nate img {
+  float: left;
+}
