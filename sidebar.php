@@ -10,7 +10,10 @@
 
     <ul>
       <li>
-        <a href="<?php bloginfo('url') ?>/"><span>Phase III</span> Rorschach</a>
+        <a href="<?php bloginfo('url') ?>/"><span>Phase IV</span> Single Question Interviews</a>
+      </li>
+      <li>
+        <a href="<?php bloginfo('url') ?>/phase-iii-rorschach"><span>Phase III</span> Rorschach</a>
       </li>
       <li>
         <a href="<?php bloginfo('url') ?>/phase-ii-panels?week=224"><span>Phase II</span> Panels</a>
