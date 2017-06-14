@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
+
+
   Phase = {
 
     init: function(){
-
-      console.log('Phase IV');
 
       // Request Data from ajax
       var request = {
@@ -25,7 +25,7 @@ $(document).ready(function () {
       // TODO : Determine Route
 
       // Start with last entry in object
-      Phase.renderGrid();
+      Phase.renderSingle(Phase.data[Phase.data.length-1].id);
       // Phase.renderGrid();
 
     },
@@ -36,12 +36,26 @@ $(document).ready(function () {
 
       _.templateSettings.variable = "posts";
 
-      var template = _.template( $( "#template-post" ).html() );
+      var template = _.template( $( "#template-grid" ).html() );
 
       $('main').html( template( Phase.data ) );
 
+      Phase.bindElements();
+      Phase.centerGrid();
+
     },
 
+    centerGrid: function(){
+
+    },
+
+    renderSingle: function( post_id ){
+
+    },
+
+    centerSingle: function(){
+
+    }
   };
 
   Phase.init();

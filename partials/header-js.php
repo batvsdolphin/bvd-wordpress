@@ -26,3 +26,8 @@
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/vendor/underscore-min.js"></script>
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/phase-iii.js" ></script>
 <?php } ?>
+
+<?php if ( is_page_template( 'templates/phase-iv.php' ) ) { ?>
+	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/vendor/underscore-min.js"></script>
+	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/phase-iv.js" ></script>
+<?php } ?>
