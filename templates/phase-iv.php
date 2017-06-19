@@ -21,11 +21,15 @@ Template Name: Phase IV
 		<ul>
 	    <% _.each( posts, function( post ){ %>
 				<li data-id="<%= post.id %>">
+
 					<div class="image" style="background:url(<%= post.img %>) center center no-repeat;"></div>
 
-            <h2><%= post.title %></h2>
+          <div class="Post-Content">
             <h3><%= post.author %></h3>
-            <div class="content"><%= post.story %></div>
+            <h2><%= post.title %></h2>
+            <%= post.story %>
+          </div>
+
 				</li>
 	    <% }); %>
 		</ul>

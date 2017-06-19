@@ -3,17 +3,56 @@
 // innerWidth override
 
 .IV-Grid {
-  border: 1px dotted red;
+  margin-top: 100px;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.IV-Grid ul {
+  margin-top: 100px;
+}
+
+.IV-Grid ul li {
+  margin-bottom: 100px;
+  list-style: none;
+}
+
+@imageSize:300px;
+
+.IV-Grid ul li:nth-child(odd) {
+   .image { float: left; }
+   .Post-Content {
+      margin-left: @imageSize + 30;
+   }
+}
+.IV-Grid ul li:nth-child(even) {
+   .image { float: right; }
+   .Post-Content {
+      margin-right: @imageSize + 30;
+   }
+}
+
+.IV-Grid .Post-Content {
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+
+.IV-Grid h2 {
+  margin: 0px 0 20px 0;
+}
+
+.IV-Grid h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: .3;
 }
 
 .IV-Grid ul li .image {
-  width: 200px;
-  height: 200px;
+  width: @imageSize;
+  height: @imageSize;
   background-size: contain !important;
   float: left;
   display: block;
-}
-
-.IV-Grid ul li .content {
-  margin-left: 200px;
+  margin-top: 20px;
 }
