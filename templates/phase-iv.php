@@ -22,7 +22,7 @@ Template Name: Phase IV
 	    <% _.each( posts, function( post ){ %>
 				<li data-id="<%= post.id %>">
 
-					<div class="image" style="background:url(<%= post.img %>) center center no-repeat;"></div>
+          <div class="image" style="background:url(<%= post.img %>) center center no-repeat;"></div>
 
           <div class="Post-Content">
             <h3><%= post.author %></h3>
