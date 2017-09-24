@@ -1,6 +1,3 @@
-$(document).ready(function () {
-
-
 
   Phase = {
 
@@ -58,6 +55,4 @@ $(document).ready(function () {
     }
   };
 
-  Phase.init();
-
-});
+  window.bvd.Phase = Phase_III;

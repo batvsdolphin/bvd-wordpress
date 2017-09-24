@@ -7,7 +7,7 @@ Template Name: Phase II
 <?php get_header(); ?>
 
 
-	<div class="center Panels">
+	<main class="Phase-II center Panels">
 
 		<div class="Panels-Navigation">
 			<ul>
@@ -88,6 +88,6 @@ Template Name: Phase II
 		</li>
 
 		</ul>
-	</div>
+	</main>
 
 <?php get_footer(); ?>

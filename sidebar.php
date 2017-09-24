@@ -10,16 +10,16 @@
 
     <ul>
       <li>
-        <a href="<?php bloginfo('url') ?>/"><span>Phase IV</span>Object Stories</a>
+        <a href="<?php bloginfo('url') ?>/"><span>IV</span>Object Stories</a>
       </li>
       <li>
-        <a href="<?php bloginfo('url') ?>/phase-iii-rorschach"><span>Phase III</span> Rorschach</a>
+        <a href="<?php bloginfo('url') ?>/phase-iii-rorschach"><span>III</span> Rorschach</a>
       </li>
       <li>
-        <a href="<?php bloginfo('url') ?>/phase-ii-panels?week=224"><span>Phase II</span> Panels</a>
+        <a href="<?php bloginfo('url') ?>/phase-ii-panels?week=224"><span>II</span> Panels</a>
       </li>
       <li>
-        <a href="<?php bloginfo('url') ?>/phase-i-10-seconds/"><span>Phase I</span> 10 Seconds</a>
+        <a href="<?php bloginfo('url') ?>/phase-i-10-seconds/"><span>I</span> 10 Seconds</a>
       </li>
     </ul>
 

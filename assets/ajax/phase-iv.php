@@ -20,6 +20,7 @@ query_posts( array(
    'author'	=>	get_the_author_meta('first_name'),
    'img'	=>	get_field('object_photo')[sizes][large],
    'story'	=>	get_field('story'),
+   'hightlightColor'	=>	get_field('highlightColor'),
  );
 
  endwhile;

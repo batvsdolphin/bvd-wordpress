@@ -11,23 +11,4 @@
 </script>
 
 
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/vendor/jquery-3.1.1.min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/bvd-common.js" ></script>
-
-<?php if ( is_page_template( 'templates/phase-i.php' ) ) { ?>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/phase-i.js" ></script>
-<?php } ?>
-
-<?php if ( is_page_template( 'templates/phase-ii.php' ) ) { ?>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/phase-ii.js" ></script>
-<?php } ?>
-
-<?php if ( is_page_template( 'templates/phase-iii.php' ) ) { ?>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/vendor/underscore-min.js"></script>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/phase-iii.js" ></script>
-<?php } ?>
-
-<?php if ( is_page_template( 'templates/phase-iv.php' ) ) { ?>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/vendor/underscore-min.js"></script>
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/js/phase-iv.js" ></script>
-<?php } ?>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/scripts.js" ></script>

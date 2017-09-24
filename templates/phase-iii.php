@@ -7,11 +7,7 @@ Template Name: Phase III
 <?php get_header(); ?>
 
 
-<main class="III-Content u-innerWidth">
-
-
-</main>
-
+<main class="Phase-III III-Content u-innerWidth"></main>
 
 <!-- ::::::::::::::: GRID ::::::::::::::: -->
 
@@ -91,8 +87,6 @@ Template Name: Phase III
 	</div>
 
 </div>
-
-
 
 </script>
 

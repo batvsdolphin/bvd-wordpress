@@ -1,6 +1,4 @@
-$(document).ready(function () {
-
-  Phase = {
+var Phase_IV = {
 
     init: function(){
 
@@ -9,24 +7,28 @@ $(document).ready(function () {
       // Request Data from ajax
       var request = {
         name : 'phase-iv',
-        onComplete : Phase.loadPhase
-      }
+        onComplete : window.bvd.Phase_IV.loadPhase
+      };
 
-      window.bvd.tools.phaseData( request )
+      window.bvd.tools.phaseData( request );
 
     },
 
     loadPhase: function(data){
 
       // Save phase Data to Phase object
-      Phase.data = data;
-      console.log( Phase.data );
+      Phase_IV.data = data;
+      console.log( Phase_IV.data );
 
       // TODO : Determine Route
 
       // Start with last entry in object
-      Phase.renderGrid();
-      // Phase.renderGrid();
+      Phase_IV.renderGrid();
+
+      // $(".image img").pin({padding: {top: 0}});
+      $(".image").stick_in_parent({recalc_every: 1});
+
+
 
     },
 
@@ -38,12 +40,9 @@ $(document).ready(function () {
 
       var template = _.template( $( "#template-post" ).html() );
 
-      $('main').html( template( Phase.data ) );
+      $('.IV-Content').html( template( Phase_IV.data ) );
 
     },
-
   };
 
-  Phase.init();
-
-});
+window.bvd.Phase_IV = Phase_IV;

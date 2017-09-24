@@ -38,8 +38,9 @@ gulp.task('js', function(){
 
   return gulp.src([dir + 'vendor/jquery-3.1.1.min.js',
                    dir + 'vendor/*.js',
-                   dir + 'bvd-common.js',
-                   dir + 'phase-*.js' ])
+                   dir + 'bvd-tools.js',
+                   dir + 'phase-*.js',
+                   dir + 'bvd-app.js' ])
           .pipe(concat('scripts.js'))
           .pipe(uglify())
           .pipe(gulp.dest( './assets/' ));
@@ -49,7 +50,9 @@ gulp.task('js', function(){
 gulp.task('default', ['less', 'js']);
 
 gulp.watch('./assets/less/*.less', ['less']);
-gulp.watch('./assets/js/app.js', ['js']);
+gulp.watch('./assets/js/*.js', ['js']);
 
 
-// To Start browsersync : browser-sync start --proxy "batvsdolphin.dev" --files "assets/**/*.js, style.css, templates/*.php"
+// To Start browsersync :
+// use the alias "bvd-sync", which is just
+// browser-sync start --proxy "batvsdolphin.dev" --files "assets/**/*.js, style.css, templates/*.php"

@@ -1,10 +1,53 @@
 @import (reference) url("refs.less");
 
-// innerWidth override
+// --- FONTS ------------------
+
+.Phase-IV h1,
+.Phase-IV h2 {
+  font-family: "gastromond",sans-serif;
+}
+
+.Phase-IV h1 {
+  font-size: 80px;
+  display: block;
+  text-align: center;
+}
+
+.Phase-IV h3 {
+  font-family: "proxima-nova",sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Phase-IV h2 {
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 45px;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+
+.Phase-IV p {
+  font-family: "calluna",serif;
+  font-size: 19px;
+  line-height: 27px;
+  text-align: justify;
+  padding-bottom: 30px;
+}
+
+
+// --- LAYOUT ------------------
+
+.Phase-IV {
+  padding-top: 100px;
+
+}
 
 .IV-Grid {
   margin-top: 100px;
-  max-width: 700px;
+  max-width: 800px;
   width: 90%;
   margin: 0 auto;
 }
@@ -16,47 +59,61 @@
 .IV-Grid ul li {
   margin-bottom: 100px;
   list-style: none;
+  border-top: 1px solid #D5D5D5;
+  // padding-top: 50px;
 }
 
-@imageSize:300px;
+.circle-decoration {
+  background: url("@{imgRoot}phase-iv/circle-decoration.svg") no-repeat center center;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin-top: -25px;
+}
+
+@imageSize:45%;
 
 .IV-Grid ul li:nth-child(odd) {
-   .image { float: left; }
+   .image {
+     float: left;
+    padding-right: 20px;
+    }
    .Post-Content {
-      margin-left: @imageSize + 30;
+      margin-left: @imageSize;
    }
 }
 .IV-Grid ul li:nth-child(even) {
-   .image { float: right; }
+   .image {
+     float: right;
+     padding-left: 20px;
+   }
    .Post-Content {
-      margin-right: @imageSize + 30;
+      margin-right: @imageSize;
    }
 }
 
 .IV-Grid .Post-Content {
-  border-top: 1px solid gray;
-  padding-top: 20px;
+  padding: 20px 30px 0 0 ;
 }
 
 .IV-Grid h2 {
-  margin: 0px 0 20px 0;
+  margin: 40px 0 40px 0;
 }
 
 .IV-Grid h3 {
-  text-transform: uppercase;
-  font-size: 12px;
-  opacity: .3;
-}
-
-.IV-Grid p {
-  padding-bottom: 30px;
+  opacity: .5;
+  margin-bottom: 10px;
 }
 
 .IV-Grid ul li .image {
   width: @imageSize;
-  height: @imageSize;
-  background-size: contain !important;
   float: left;
   display: block;
   margin-top: 20px;
+  // border: 1px dotted red;
+
+}
+.IV-Grid ul li .image img {
+  width: 100%;
+  height: auto;
 }

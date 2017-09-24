@@ -7,11 +7,12 @@ Template Name: Phase IV
 <?php get_header(); ?>
 
 
-<main class="IV-Content u-innerWidth">
+<main class="Phase-IV u-innerWidth">
 
+  <h1>Object Stories</h1>
+  <div class="IV-Content"></div>
 
 </main>
-
 
 <!-- ::::::::::::::: GRID ::::::::::::::: -->
 
@@ -21,13 +22,17 @@ Template Name: Phase IV
 		<ul>
 	    <% _.each( posts, function( post ){ %>
 				<li data-id="<%= post.id %>">
+          <div class="circle-decoration"></div>
 
-          <div class="image" style="background:url(<%= post.img %>) center center no-repeat;"></div>
+          <h2 style="color:<%= post.hightlightColor %>"><%= post.title %></h2>
+
+          <div class="image">
+            <img src="<%= post.img %>" alt="">
+          </div>
 
           <div class="Post-Content">
-            <h3><%= post.author %></h3>
-            <h2><%= post.title %></h2>
             <%= post.story %>
+            <h3>- <%= post.author %></h3>
           </div>
 
 				</li>

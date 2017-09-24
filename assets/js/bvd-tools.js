@@ -1,15 +1,10 @@
+// Initialize the "bvd" object. Must come before Phases
+window.bvd = {};
 
-// Global Object
-
-
-window.bvd = {
-  themeFolder: 'http://batvsdolphin.dev/wp-content/themes/batvsdolphin/'
-}
-
-$(document).ready(function () {
-
-  var tools = {
+var tools = {
     phaseData: function( request ){
+
+      console.log('requesting', request );
 
       var json_data;
       var data_URL = window.bvd.themeFolder + "/assets/ajax/" + request.name + ".php";
@@ -17,10 +12,6 @@ $(document).ready(function () {
       var data =  $.get( data_URL, function( data ) {
          request.onComplete( $.parseJSON(data) );
       });
-
-      // console.log( data );
-
-
     },
 
     findKey: function(obj, value) {
@@ -39,10 +30,7 @@ $(document).ready(function () {
       return key;
 
     }
-
-
   };
 
-  window.bvd.tools = tools;
 
-});
+  window.bvd.tools = tools;

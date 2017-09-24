@@ -1,22 +1,24 @@
-$(document).ready(function () {
 
+window.bvd.Phase_I = {
+  init: function(){
 
-  $(".js-PlayAudio").hover(function(){
+    console.log('Phase I');
 
-        var target_name = $(this).data('target');
-        var audio = $('#' + target_name);
-        var audio_source = audio[0];
+    $(".js-PlayAudio").hover(function(){
 
-        audio_source.play();
+      var target_name = $(this).data('target');
+      var audio = $('#' + target_name);
+      var audio_source = audio[0];
 
-      }, function(){
+      audio_source.play();
 
-        var target_name = $(this).data('target');
-        var audio = $('#' + target_name);
-        var audio_source = audio[0];
+    }, function(){
 
-         audio_source.pause();
-      });
+      var target_name = $(this).data('target');
+      var audio = $('#' + target_name);
+      var audio_source = audio[0];
 
-
-});
+      audio_source.pause();
+    });
+  }
+};

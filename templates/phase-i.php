@@ -6,7 +6,7 @@ Template Name: Phase I
 
 <?php get_header(); ?>
 
-	<div class="center AudioSwap">
+	<main class="center AudioSwap Phase-I">
 
 		<ul class="Entries">
 
@@ -54,6 +54,6 @@ Template Name: Phase I
 	<?php endwhile; ?>
 
 		</ul>
-	</div>
+	</main>
 
 <?php get_footer(); ?>
