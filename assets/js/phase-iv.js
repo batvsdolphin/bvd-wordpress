@@ -17,7 +17,7 @@ var Phase_IV = {
     loadPhase: function(data){
 
       // Save phase Data to Phase object
-      Phase_IV.data = data;
+      Phase_IV.data = data.reverse();
       console.log( Phase_IV.data );
 
       // TODO : Determine Route
@@ -25,11 +25,17 @@ var Phase_IV = {
       // Start with last entry in object
       Phase_IV.renderGrid();
 
-      // $(".image img").pin({padding: {top: 0}});
-      $(".image").stick_in_parent({recalc_every: 1});
+      function checkPin(){
+        if ( $(window).width() > 480 ) {
+          $(".image").stick_in_parent({recalc_every: 1});
+        } else {
+          $(".image").trigger("sticky_kit:detach");
+        }
+      }
 
+      $( window ).resize(function() { checkPin(); });
 
-
+      checkPin();
     },
 
     renderGrid: function(){

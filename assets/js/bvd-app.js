@@ -1,5 +1,5 @@
 
-window.bvd.themeFolder = 'http://batvsdolphin.dev/wp-content/themes/batvsdolphin/';
+window.bvd.themeFolder = 'http://batvsdolphin.com/wp-content/themes/batvsdolphin/';
 
 // Global Object
 $(document).ready(function () {

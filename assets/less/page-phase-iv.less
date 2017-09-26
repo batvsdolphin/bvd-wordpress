@@ -40,10 +40,7 @@
 
 // --- LAYOUT ------------------
 
-.Phase-IV {
-  padding-top: 100px;
-
-}
+.Phase-IV { padding-top: 100px; }
 
 .IV-Grid {
   margin-top: 100px;
@@ -116,4 +113,20 @@
 .IV-Grid ul li .image img {
   width: 100%;
   height: auto;
+}
+
+// Responsive - Phone - Portrait
+// --------------------------------------------------
+@media (min-width: 0) and (max-width: 480px) {
+
+  .IV-Grid ul li {
+     .image {
+        float: none !important;
+        padding-right: 0;
+        width: 90%;
+        margin: 0 auto;
+      }
+     .Post-Content { margin: 0 !important; }
+  }
+
 }
