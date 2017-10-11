@@ -19,17 +19,18 @@ function get_audio_entry( $name ) {
 
     <?php }; ?>
 
-    <div class="AudioCircle js-PlayAudio" data-target="<?php echo $audio_target; ?>" style="border-color: <?php the_field( $name.'_color'); ?>" title="<?php echo  $audio_description; ?> "></div>
+    <div class="AudioCircle hvr-pulse js-PlayAudio" data-target="<?php echo $audio_target; ?>" style="border-color: <?php the_field( $name.'_color'); ?>" title="<?php echo  $audio_description; ?> "></div>
 
     <div class="Hidden">
 
-      <div class="AudioName" style="color: <?php the_field( $name.'_color'); ?>">
+      <div class="AudioTitle" style="color: <?php the_field( $name.'_color'); ?>">
+        <?php the_field( $name.'_sound_title'); ?>
+      </div> <!-- AudioTitle -->
+
+      <div class="AudioName" >
         <?php echo $name; ?>
       </div> <!-- AudioName -->
 
-      <div class="AudioTitle">
-        <?php the_field( $name.'_sound_title'); ?>
-      </div> <!-- AudioTitle -->
 
     </div> <!-- Audio-invisible -->
 

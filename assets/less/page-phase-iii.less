@@ -29,7 +29,7 @@ h2 {
 }
 
 .III-Content {
-  padding-top: 30px;
+  padding-top: 80px;
 
 }
 
@@ -38,21 +38,26 @@ h2 {
 
 
 .III-Grid ul {
-  display: table;
   margin: 0 auto;
-  display: table;
-}
+  text-align: center;
+  padding-bottom: 100px;
+  }
 
 .III-Grid ul li {
-  float: left;
-  display: block;
+  // float: left;
+  display: inline-block;
   cursor: pointer;
   list-style: none;
   padding: 15px;
   border: 1px solid transparent;
+  transition: box-shadow 300ms, transform 300ms, ;
 
   &:hover {
     border: 1px solid #eeeeee;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+
   }
 }
 

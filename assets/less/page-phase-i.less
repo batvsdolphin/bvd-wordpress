@@ -1,16 +1,28 @@
 
 .AudioSwap {
+  margin-left: 50px; // balance -50 in .Entry
 
+    font-family: "proxima-nova",sans-serif;
+
+  .Title {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+
+  .Title img {
+    width: 100%;
+    height: auto;
+  }
 
   .Entry {
     list-style: none;
     display: inline-block;
     overflow: hidden;
     height: 215px;
-    // border: 1px dotted gray;
     padding-top: 30px;
+    margin-left: -50px; // balance 50 in .AudioSwap
     cursor: pointer;
-
   }
 
   .EntryContent,
@@ -20,9 +32,7 @@
     list-style: none;
   }
 
-  .Entry .EntryContent {
-    padding: 0 25px;
-   }
+  .Entry .EntryContent { padding: 0 25px; }
 
   .EntryShim { display: none; }
   .Hidden {
@@ -31,26 +41,24 @@
     transition: opacity 1s;
   }
 
-  .Entry:hover{
-
+  .Entry:hover {
     z-index: 100;
 
-    .Hidden { display: block; opacity: 1;}
-
-    .EntryShim {
+    .Hidden {
       display: block;
+      opacity: 1;
     }
+
+    .EntryShim { display: block; }
 
     .EntryContent {
       box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.50);
       background: white;
       position: absolute;
-      height: 400px;
+      height: 360px;
       margin-top: -90px;
       padding-top: 30px;
       z-index: 100;
-
-
     }
   }
 
@@ -61,6 +69,7 @@
     text-align: center;
     margin-bottom: 20px;
     font-weight: lighter;
+    opacity: .3;
   }
 
   // AUDIO ENTRY
@@ -68,8 +77,6 @@
   .AudioEntry {
     float: left;
     width: 50%;
-    // border: 1px dotted gray;
-
   }
 
   .AudioCircle,
@@ -96,13 +103,90 @@
 
   .AudioName {
     text-transform: capitalize;
-    margin-top: 20px;
-  }
-  .AudioTitle {
     opacity: .5;
   }
 
-
-
-
+  .AudioTitle {
+    margin-top: 20px;
+    font-size: 20px;
+    width: 220px;
+  }
 }
+
+
+// Extra styles from
+// https://github.com/IanLunn/Hover/blob/master/css/hover.css
+
+  /* Pulse */
+  @-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+    }
+    75% {
+      -webkit-transform: scale(0.99);
+      transform: scale(0.99);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+    }
+    75% {
+      -webkit-transform: scale(0.99);
+      transform: scale(0.99);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition: box-shadow 300ms ;
+  }
+  .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 30px rgba(0,0,0, .2);
+  }
+
+  /* Pulse Grow */
+  @-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+  }
+  .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }

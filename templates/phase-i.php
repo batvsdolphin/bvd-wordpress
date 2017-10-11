@@ -8,6 +8,10 @@ Template Name: Phase I
 
 	<main class="center AudioSwap Phase-I">
 
+    <div class="Title">
+      <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/phase-i/ten-seconds.png" />
+    </div>
+
 		<ul class="Entries">
 
 	<?php query_posts( array(
