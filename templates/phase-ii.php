@@ -9,6 +9,11 @@ Template Name: Phase II
 
 	<main class="Phase-II center Panels">
 
+    <div class="Title">
+      <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/phase-ii/panels-title.png" />
+    </div>
+
+
 		<div class="Panels-Navigation">
 			<ul>
 				  <?php
@@ -46,7 +51,7 @@ Template Name: Phase II
 
 			<div class="u-clearboth"></div>
 
-		<div>
+		</div>
 
 
     <ul class="Entries">

@@ -7,11 +7,15 @@ Template Name: Phase III
 <?php get_header(); ?>
 
 
-<main class="Phase-III III-Content u-innerWidth"></main>
+<main class="Phase-III III-Content u-innerWidth"> </main>
 
 <!-- ::::::::::::::: GRID ::::::::::::::: -->
 
 <script type="text/template" id="template-grid">
+
+  <div class="Title">
+    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/phase-iii/rorschach-title.jpg" />
+  </div>
 
 	<div class="III-Grid js-grid">
 		<ul>
@@ -29,6 +33,7 @@ Template Name: Phase III
 <!-- ::::::::::::::: SINGLE ::::::::::::::: -->
 
 <script type="text/template" id="template-single">
+
 
 
 	<div class="III-Single III-Single-Width">

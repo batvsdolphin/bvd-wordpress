@@ -4,34 +4,53 @@
 .Panels {
 
 
+    .Title {
+      width: 40%;
+      margin: 0 auto;
+      padding-top: 70px;
+    }
+
+    .Title img {
+      width: 100%;
+      height: auto;
+    }
+
   .Panels-Navigation {
 
     ul {
-      display: table;
-      margin: 0 auto;
-      padding: 30px 0;
+      display: inline-block;
+      margin: 30px auto 30px auto;
+      padding: 0;
+      border: 1px solid darken(#eeeeee, 20%);
+
     }
 
     li {
       float: left;
       list-style: none;
-      margin: 0 20px;
+      // margin: 0 30px;
     }
 
     .is-activeWeek a {
       font-weight: bold;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,.3);
     }
+    .is-activeWeek a:hover {
+      text-decoration: none;
+    }
+
+
     a {
       text-decoration: none;
       display: block;
       color: black;
+      background: #eeeeee;
+      padding: 3px 20px;
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
-     }
-     .is-currentWeek a {
-      font-weight: bold;
      }
   }
 
