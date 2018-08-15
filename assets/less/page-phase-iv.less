@@ -38,6 +38,45 @@
 }
 
 
+// --- NAV ------------------
+
+.Phase-IV .IV-Nav {
+  margin: 100px 0 200px 0;
+}
+.Phase-IV .IV-Nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 4%;
+
+}
+.Phase-IV .IV-Nav ul li {
+  width: 10%;
+  flex: 1;
+
+  text-align: center;
+  margin: 0 2%;
+}
+.Phase-IV .IV-Nav ul li a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.Phase-IV .IV-Nav ul li a:hover {
+  border: 1px solid gray;
+}
+
+.Phase-IV .IV-Nav ul img {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+}
 // --- LAYOUT ------------------
 
 .Phase-IV { padding-top: 100px; }
@@ -118,6 +157,15 @@
 // Responsive - Phone - Portrait
 // --------------------------------------------------
 @media (min-width: 0) and (max-width: 480px) {
+
+  .Phase-IV .IV-Nav ul,
+  .Phase-IV .IV-Nav ul li  {
+    display: block;
+    width: 100%;
+  }
+  .Phase-IV .IV-Nav ul li  {
+    margin-bottom: 30px;
+  }
 
   .IV-Grid ul li {
      .image {

@@ -1,54 +1,70 @@
 var Phase_IV = {
 
-    init: function(){
+  init: function() {
 
-      console.log('Phase IV');
+    console.log('Phase IV');
 
-      // Request Data from ajax
-      var request = {
-        name : 'phase-iv',
-        onComplete : window.bvd.Phase_IV.loadPhase
-      };
+    // Request Data from ajax
+    var request = {
+      name: 'phase-iv',
+      onComplete: window.bvd.Phase_IV.loadPhase
+    };
 
-      window.bvd.tools.phaseData( request );
+    window.bvd.tools.phaseData(request);
 
-    },
+  },
 
-    loadPhase: function(data){
+  loadPhase: function(data) {
 
-      // Save phase Data to Phase object
-      Phase_IV.data = data.reverse();
-      console.log( Phase_IV.data );
+    // Save phase Data to Phase object
+    Phase_IV.data = data.reverse();
+    console.log(Phase_IV.data);
 
-      // TODO : Determine Route
+    // TODO : Determine Route
 
-      // Start with last entry in object
-      Phase_IV.renderGrid();
+    // Start with last entry in object
+    Phase_IV.renderNav();
+    Phase_IV.renderGrid();
 
-      function checkPin(){
-        if ( $(window).width() > 480 ) {
-          $(".image").stick_in_parent({recalc_every: 1});
-        } else {
-          $(".image").trigger("sticky_kit:detach");
-        }
+    function checkPin() {
+      if ($(window).width() > 480) {
+        $(".IV-Grid .image").stick_in_parent({recalc_every: 1});
+      } else {
+        $(".IV-Grid .image").trigger("sticky_kit:detach");
       }
+    }
 
-      $( window ).resize(function() { checkPin(); });
-
+    $(window).resize(function() {
       checkPin();
-    },
+    });
 
-    renderGrid: function(){
+    checkPin();
+  },
 
-      // Fill Template
+  renderNav: function() {
 
-      _.templateSettings.variable = "posts";
+    console.log('rendering nav');
 
-      var template = _.template( $( "#template-post" ).html() );
+    // Fill Template
 
-      $('.IV-Content').html( template( Phase_IV.data ) );
+    _.templateSettings.variable = "posts";
 
-    },
-  };
+    var template = _.template($("#template-nav").html());
+
+    $('.IV-Nav').html(template(Phase_IV.data));
+
+  },
+  renderGrid: function() {
+
+    // Fill Template
+
+    _.templateSettings.variable = "posts";
+
+    var template = _.template($("#template-post").html());
+
+    $('.IV-Content').html(template(Phase_IV.data));
+
+  }
+};
 
 window.bvd.Phase_IV = Phase_IV;
