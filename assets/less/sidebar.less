@@ -17,24 +17,23 @@
   right: @sidebarPadding;
   top: @sidebarPadding;
   z-index: 110;
-  background-size: contain !important;
-  opacity: .3;
+  opacity: 1;
   transition: 300ms opacity;
   cursor: pointer;
 
-  &:hover { opacity: 1; }
+  &:hover { opacity: .5; }
 }
 
 .SidebarButton-Close {
   width: 26px;
-  height: 19px;
-  background: url("@{imgRoot}/hamburger-close.png") no-repeat center center;
+  height: 20px;
+  background: url("@{imgRoot}/hamburger-close.svg") no-repeat center center;
 }
 
 .SidebarButton-Open {
   width: 26px;
-  height: 19px;
-  background: url("@{imgRoot}/hamburger-open.png") no-repeat center center;
+  height: 20px;
+  background: url("@{imgRoot}/hamburger-open.svg") no-repeat center center;
 }
 
 
