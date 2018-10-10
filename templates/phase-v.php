@@ -1,17 +1,18 @@
 <?php
 /*
-Template Name: Phase I
+Template Name: Phase V
 */
 ?>
 
 <?php get_header(); ?>
 
+
 	<main class="center AudioSwap Phase-V">
 
-    <div class="Title">
+    <!-- <div class="Title">
       <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Phase-V/ten-seconds.png" />
     </div>
-
+ -->
 		<ul class="Entries">
 
 	<?php query_posts( array(
