@@ -10,7 +10,10 @@
 
     <ul>
       <li>
-        <a href="<?php bloginfo('url') ?>/"><span>IV</span>Object Stories</a>
+        <a href="<?php bloginfo('url') ?>/"><span>V</span>Bar None</a>
+      </li>
+      <li>
+        <a href="<?php bloginfo('url') ?>/phase-iv-object-stories"><span>IV</span>Object Stories</a>
       </li>
       <li>
         <a href="<?php bloginfo('url') ?>/phase-iii-rorschach"><span>III</span> Rorschach</a>

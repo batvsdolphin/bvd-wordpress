@@ -11,4 +11,4 @@
 </script>
 
 
-<script src="<?php bloginfo('stylesheet_directory'); ?>/assets/scripts.js" ></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>/scripts.js" ></script>

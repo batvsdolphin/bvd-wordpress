@@ -1,5 +1,5 @@
 
-window.bvd.themeFolder = 'http://batvsdolphin.com/wp-content/themes/batvsdolphin/';
+window.bvd.themeFolder = 'http://batvsdolphin.local/wp-content/themes/batvsdolphin/';
 
 // Global Object
 $(document).ready(function () {
@@ -16,6 +16,10 @@ $(document).ready(function () {
 
   if ( $("main").is(".Phase-IV") ) {
     window.bvd.Phase_IV.init();
+  }
+
+  if ( $("main").is(".Phase-V") ) {
+    window.bvd.Phase_V.init();
   }
 
 });

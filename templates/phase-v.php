@@ -6,8 +6,7 @@ Template Name: Phase V
 
 <?php get_header(); ?>
 
-
-	<main class="center AudioSwap Phase-V">
+	<main class="center Phase-V">
 
     <!-- <div class="Title">
       <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Phase-V/ten-seconds.png" />
@@ -16,7 +15,7 @@ Template Name: Phase V
 		<ul class="Entries">
 
 	<?php query_posts( array(
-    'category_name'  => 'phase-v-audio-rorschach',
+    'category_name'  => 'phase-v',
     'posts_per_page' => -1
     ) );
  ?>
