@@ -14,10 +14,11 @@
   <link rel="icon" type="image/png" href="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/favicon/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/favicon/favicon-16x16.png" sizes="16x16" />
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
-	<?php get_template_part( 'partials/header', 'js' ); ?>
+	<?php get_template_part( 'partials/header', 'fonts' ); ?>
+  
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/scripts.js" ></script>
 
 	<?php wp_head(); ?>
 

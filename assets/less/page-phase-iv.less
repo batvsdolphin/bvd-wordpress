@@ -2,43 +2,60 @@
 
 // --- FONTS ------------------
 
-.Phase-IV h1,
-.Phase-IV h2 {
-  font-family: "gastromond",sans-serif;
+.Phase-IV {
+  h1,
+  h2 {
+    font-family: "Bebas Neue", cursive;
+  }
+  h3 {
+    font-family: "proxima-nova", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 45px;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+  }
+  p {
+    font-family: "Noto Serif TC", serif;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: justify;
+    padding-bottom: 30px;
+  }
+
+  // --- NAV ------------------
+
+  .Title {
+    width: 550px;
+    max-width: 80%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .Nav__Title {
+    font-family: "Noto Serif TC", serif;
+    font-size: 19px;
+    font-weight: bold;
+    display: block;
+  }
+
+  .Nav__Author {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 3px;
+    opacity: .2;
+  }
 }
-
-.Phase-IV h1 {
-  font-size: 80px;
-  display: block;
-  text-align: center;
-}
-
-.Phase-IV h3 {
-  font-family: "proxima-nova",sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.Phase-IV h2 {
-  font-size: 44px;
-  font-weight: normal;
-  line-height: 45px;
-  letter-spacing: 1px;
-  display: block;
-  text-align: center;
-}
-
-.Phase-IV p {
-  font-family: "calluna",serif;
-  font-size: 19px;
-  line-height: 27px;
-  text-align: justify;
-  padding-bottom: 30px;
-}
-
-
-// --- NAV ------------------
 
 .Phase-IV .IV-Nav {
   margin: 100px 0 200px 0;
@@ -47,16 +64,16 @@
   display: flex;
   list-style: none;
   justify-content: center;
-  margin-bottom: 4%;
-
+  // margin-bottom: 4%;
+  align-content: flex-start; /* Add this*/
 }
 .Phase-IV .IV-Nav ul li {
   width: 10%;
-  flex: 1;
-
+  flex: 1 100%;
   text-align: center;
-  margin: 0 2%;
+  margin: 0;
 }
+
 .Phase-IV .IV-Nav ul li a {
   height: 100%;
   display: flex;
@@ -64,12 +81,30 @@
   flex-direction: column;
   padding: 30px 10px;
   border: 1px solid #eeeeee;
-  border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0,0,0,.2);
+  text-decoration: none;
+  color: black;
 }
 
+
+.Phase-IV .IV-Nav ul:nth-child(1) li:nth-child(1) a,
+.Phase-IV .IV-Nav ul:nth-child(1) li:nth-child(2) a,
+.Phase-IV .IV-Nav ul:nth-child(1) li:nth-child(3) a {
+  border-top: 1px solid transparent;
+}
+
+.Phase-IV .IV-Nav ul:nth-child(2) li:nth-child(1) a,
+.Phase-IV .IV-Nav ul:nth-child(2) li:nth-child(2) a,
+.Phase-IV .IV-Nav ul:nth-child(2) li:nth-child(3) a {
+  border-bottom: 1px solid transparent;
+}
+
+.Phase-IV .IV-Nav ul li:nth-child(1) a{ border-left: 1px solid transparent; }
+.Phase-IV .IV-Nav ul li:nth-child(3) a{ border-right: 1px solid transparent; }
+
+
+
 .Phase-IV .IV-Nav ul li a:hover {
-  border: 1px solid gray;
+  border: 1px solid gray !important;
 }
 
 .Phase-IV .IV-Nav ul img {
@@ -79,7 +114,9 @@
 }
 // --- LAYOUT ------------------
 
-.Phase-IV { padding-top: 100px; }
+.Phase-IV {
+  padding-top: 100px;
+}
 
 .IV-Grid {
   margin-top: 100px;
@@ -95,41 +132,42 @@
 .IV-Grid ul li {
   margin-bottom: 100px;
   list-style: none;
-  border-top: 1px solid #D5D5D5;
+  border-top: 1px solid #d5d5d5;
   // padding-top: 50px;
 }
 
 .circle-decoration {
-  background: url("@{imgRoot}phase-iv/circle-decoration.svg") no-repeat center center;
+  background: url("@{imgRoot}phase-iv/circle-decoration.svg") no-repeat center
+    center;
   width: 100%;
   height: 50px;
   position: relative;
   margin-top: -25px;
 }
 
-@imageSize:45%;
+@imageSize: 45%;
 
 .IV-Grid ul li:nth-child(odd) {
-   .image {
-     float: left;
+  .image {
+    float: left;
     padding-right: 20px;
-    }
-   .Post-Content {
-      margin-left: @imageSize;
-   }
+  }
+  .Post-Content {
+    margin-left: @imageSize;
+  }
 }
 .IV-Grid ul li:nth-child(even) {
-   .image {
-     float: right;
-     padding-left: 20px;
-   }
-   .Post-Content {
-      margin-right: @imageSize;
-   }
+  .image {
+    float: right;
+    padding-left: 20px;
+  }
+  .Post-Content {
+    margin-right: @imageSize;
+  }
 }
 
 .IV-Grid .Post-Content {
-  padding: 20px 30px 0 0 ;
+  padding: 20px 30px 0 0;
 }
 
 .IV-Grid h2 {
@@ -137,7 +175,7 @@
 }
 
 .IV-Grid h3 {
-  opacity: .5;
+  opacity: 0.5;
   margin-bottom: 10px;
 }
 
@@ -147,7 +185,6 @@
   display: block;
   margin-top: 20px;
   // border: 1px dotted red;
-
 }
 .IV-Grid ul li .image img {
   width: 100%;
@@ -157,24 +194,24 @@
 // Responsive - Phone - Portrait
 // --------------------------------------------------
 @media (min-width: 0) and (max-width: 480px) {
-
   .Phase-IV .IV-Nav ul,
-  .Phase-IV .IV-Nav ul li  {
+  .Phase-IV .IV-Nav ul li {
     display: block;
     width: 100%;
   }
-  .Phase-IV .IV-Nav ul li  {
+  .Phase-IV .IV-Nav ul li {
     margin-bottom: 30px;
   }
 
   .IV-Grid ul li {
-     .image {
-        float: none !important;
-        padding-right: 0;
-        width: 90%;
-        margin: 0 auto;
-      }
-     .Post-Content { margin: 0 !important; }
+    .image {
+      float: none !important;
+      padding-right: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .Post-Content {
+      margin: 0 !important;
+    }
   }
-
 }

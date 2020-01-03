@@ -9,7 +9,11 @@ Template Name: Phase IV
 
 <main class="Phase-IV u-innerWidth">
 
-  <h1>Object Stories</h1>
+  <div class="Title">
+    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Phase-IV/title.png" />
+  </div>
+
+
   <div class="IV-Nav"></div>
   <div class="u-clearboth"></div>
   <div class="IV-Content"></div>
@@ -31,6 +35,12 @@ Template Name: Phase IV
           <a href="#item-<%= post.id %>">
             <div class="image">
               <img src="<%= post.img %>" alt="">
+              <div class="Nav__Title">
+                <%= post.title %>
+              </div>
+              <div class="Nav__Author">
+                <%= post.author %>
+              </div>
             </div>
           </a>
 				</li>

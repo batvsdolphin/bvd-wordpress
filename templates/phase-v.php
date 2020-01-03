@@ -6,58 +6,50 @@ Template Name: Phase V
 
 <?php get_header(); ?>
 
-	<main class="center Phase-V">
+<main class="center Phase-V">
 
-    <!-- <div class="Title">
-      <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Phase-V/ten-seconds.png" />
-    </div>
- -->
-		<ul class="Entries">
+  <div class="Title">
+    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Phase-V/bar-none-title.png" />
+  </div>
 
-	<?php query_posts( array(
-    'category_name'  => 'phase-v',
-    'posts_per_page' => -1
-    ) );
- ?>
-	<?php while (have_posts()) : the_post(); ?>
+  <ul class="Entries">
 
-			<?php
-        //
-				// $thisMonth = get_the_date('F');
-        //
-				// if ( $thisMonth != $lastMonth ) {
-				// 	echo "<h3 class='archive-month'>$thisMonth</h3>";
-				// } else { }
-        //
-				// $lastMonth = $thisMonth;
-
-			?>
+    <?php query_posts(array(
+      'category_name'  => 'phase-v-bar-none',
+      'posts_per_page' => -1
+    ));
+    ?>
+    <?php while (have_posts()) : the_post(); ?>
 
 
-			<li class="Entry">
-        <div class="EntryContent">
+      <div class="Entry">
 
-          <div class="Hidden">
-            <div class="EntryTitle"><?php the_title(); ?></div>
+          <div class="Entry__Title">
+            <?php the_title(); ?>
+          </div>
+          <div class="Entry__Author">
+            <?php echo get_the_author_meta( 'first_name' ); ?>
+          </div>
+          <div class="Entry__Description">
+            <?php the_field('description'); ?>
           </div>
 
-          <div class="EntryLeft">
-            <?php get_audio_entry('sanju'); ?>
-          </div> <!-- EntryLeft -->
+          <?php
+          // Create ID
+          global $post;
+          $slug = $post->post_name;
+          ?>
 
-          <div class="EntryRight">
-            <?php get_audio_entry('nate'); ?>
-          </div> <!-- EntryLeft -->
+          <div class="Player" data-src="<?php echo get_field('audio_file')['url']; ?>">
+            <div class="Waveform" id="<?="$slug-waveform"?>"></div>
+            <div class="Button"> Play </div>
+          </div>
 
-        </div> <!-- EntryContent -->
+      </div>
 
-        <div class="EntryShim"></div>
+    <?php endwhile; ?>
 
-			</li>
-
-	<?php endwhile; ?>
-
-		</ul>
-	</main>
+  </ul>
+</main>
 
 <?php get_footer(); ?>
