@@ -9,7 +9,7 @@ Template Name: Phase V
 <main class="center Phase-V">
 
   <div class="Title">
-    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Phase-V/bar-none-title.png" />
+    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/phase-v/bar-none-title.png" />
   </div>
 
   <ul class="Entries">

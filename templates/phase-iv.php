@@ -10,7 +10,7 @@ Template Name: Phase IV
 <main class="Phase-IV u-innerWidth">
 
   <div class="Title">
-    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/Phase-IV/title.png" />
+    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/phase-iv/title.png" />
   </div>
 
 
