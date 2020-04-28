@@ -1,5 +1,7 @@
 
-window.bvd.themeFolder = 'http://batvsdolphin.local/wp-content/themes/batvsdolphin/';
+window.bvd.themeFolder = 'https://batvsdolphin.com/wp-content/themes/batvsdolphin/';
+
+// window.bvd.themeFolder = 'http://batvsdolphin.local/wp-content/themes/batvsdolphin/';
 
 // Global Object
 $(document).ready(function () {

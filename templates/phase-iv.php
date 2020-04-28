@@ -13,7 +13,6 @@ Template Name: Phase IV
     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/phase-iv/title.png" />
   </div>
 
-
   <div class="IV-Nav"></div>
   <div class="u-clearboth"></div>
   <div class="IV-Content"></div>
