@@ -23,5 +23,9 @@ $(document).ready(function () {
   if ( $("main").is(".Phase-V") ) {
     window.bvd.Phase_V.init();
   }
+  
+  if ( $("main").is(".Phase-VI") ) {
+    window.bvd.Phase_VI.init();
+  }
 
 });

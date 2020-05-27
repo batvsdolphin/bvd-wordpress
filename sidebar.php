@@ -10,7 +10,10 @@
 
     <ul>
       <li>
-        <a href="<?php bloginfo('url') ?>/"><span>V</span>Bar None</a>
+        <a href="<?php bloginfo('url') ?>/"><span>VI</span>The Anthemic Pandemic</a>
+      </li>
+      <li>
+        <a href="<?php bloginfo('url') ?>/phase-v-bar-none"><span>V</span>Bar None</a>
       </li>
       <li>
         <a href="<?php bloginfo('url') ?>/phase-iv-object-stories"><span>IV</span>Object Stories</a>

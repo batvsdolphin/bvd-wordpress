@@ -29,6 +29,16 @@ if ( is_page( 550 ) ) :  ?>
   <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
 <?php endif; ?>
 
+<?php 
+// Phase VI – Anthemic Pandemic
+if ( is_page( 731 ) ) :  ?> 
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<?php endif; ?>
+
 <?php
 
 // if ( is_page( array( 'about-us', 'contact', 'management' ) ) ) {
