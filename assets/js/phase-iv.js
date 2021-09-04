@@ -6,19 +6,36 @@ var Phase_IV = {
 
     // Request Data from ajax
     var request = {
-      name: 'phase-iv',
+      category: 11,
       onComplete: window.bvd.Phase_IV.loadPhase
     };
-
 
     window.bvd.tools.phaseData(request);
 
   },
 
   loadPhase: function(data) {
+    console.log( data );
 
     // Save phase Data to Phase object
-    Phase_IV.data = data.reverse();
+    Phase_IV.data = data.map( d => {
+      return {
+        id : d.id,
+        title:  d.title.rendered,
+        author: d.author === 2 ? "Sanju" : "Nate",
+        img: d.acf.object_photo.sizes.large,
+        story: d.acf.story,
+        highlightColor: d.acf.highlightColor
+
+  //          'id'	=>	get_the_ID(),
+  //  'title'	=>	get_the_title(),
+  //  'author'	=>	get_the_author_meta('first_name'),
+  //  'img'	=>	get_field('object_photo')[sizes][large],
+  //  'story'	=>	get_field('story'),
+  //  'hightlightColor'	=>	get_field('highlightColor'),
+
+      }
+    })
     console.log(Phase_IV.data);
 
     // TODO : Determine Route
