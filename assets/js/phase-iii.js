@@ -6,7 +6,7 @@ var Phase_III = {
 
     // Request Data from ajax
     var request = {
-      name: 'phase-iii',
+      category: 9,
       onComplete: window.bvd.Phase_III.loadPhase
     };
 
@@ -16,8 +16,21 @@ var Phase_III = {
 
   loadPhase: function(data) {
 
-    // Save phase Data to Phase object
-    Phase_III.data = data;
+    // Remap WP-Rest Data.
+    Phase_III.data = data.map( d => {
+      return {
+        id: d.id,
+        img: d.acf.image.sizes.large,
+        thumb: d.acf.image.sizes.medium,
+        sanju_title : d.acf.sanju_title,
+        nate_title : d.acf.nate_title,
+        sanju_response : d.acf.sanju_response,
+        nate_response : d.acf.nate_response,
+        credit : d.acf.image_credit.user_firstname,
+      }
+    });
+
+    console.log(data);
 
     // Start with last entry in object
     // Phase_III.renderSingle(Phase_III.data[Phase_III.data.length-1].id);
@@ -56,10 +69,7 @@ var Phase_III = {
       });
     }
 
-    $(window).resize(function() {
-      resizeGrid();
-    });
-
+    window.addEventListener('resize', resizeGrid);
     resizeGrid();
   },
 

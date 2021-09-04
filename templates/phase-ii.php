@@ -21,8 +21,6 @@ Template Name: Phase II
         'category'  => 7
       ));
 
-      
-
       foreach ($myposts as $post) :  setup_postdata($post);
         $activeClass = '';
         $currentWeek = '';

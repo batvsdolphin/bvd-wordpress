@@ -7,10 +7,10 @@ var tools = {
       console.log('requesting', request );
 
       var json_data;
-      var data_URL = window.bvd.themeFolder + "/assets/ajax/" + request.name + ".php";
+      var data_URL = "https://batvsdolphin.com/wp-json/wp/v2/posts?categories=" + request.category;
 
       var data =  $.get( data_URL, function( data ) {
-         request.onComplete( $.parseJSON(data) );
+         request.onComplete( data );
       });
     },
 
