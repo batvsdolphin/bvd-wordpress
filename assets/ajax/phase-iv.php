@@ -28,5 +28,4 @@ query_posts( array(
  wp_reset_postdata();
 
  echo json_encode( $data );
-
 ?>
