@@ -19,7 +19,7 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "scripts": {
-    "deploy": "wd=\"$(pwd)/*\"; rsync -avzrh --quiet --delete --exclude '.*' --exclude 'node_modules' --exclude 'deploy.sh' -e 'ssh -i ~/.ssh/id_rsa' $wd root@198.199.104.48:/../var/www/batvsdolphin.com/wp-content/themes/batvsdolphin/"
+    "deploy": "wd=\"$(pwd)/*\"; rsync -avzrh --inplace --quiet --delete --exclude '.*' --exclude 'node_modules' --exclude 'deploy.sh' -e 'ssh -i ~/.ssh/id_ed25519' $wd root@167.99.11.114:/../var/www/batvsdolphin.com/wp-content/themes/batvsdolphin/"
   },
   "author": "",
   "license": "ISC"

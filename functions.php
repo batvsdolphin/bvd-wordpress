@@ -1,5 +1,12 @@
 <?php
 
+require_once(get_template_directory() . "/endpoints/phase-1.php");
+require_once(get_template_directory() . "/endpoints/phase-2.php");
+require_once(get_template_directory() . "/endpoints/phase-3.php");
+require_once(get_template_directory() . "/endpoints/phase-4.php");
+require_once(get_template_directory() . "/endpoints/phase-5.php");
+require_once(get_template_directory() . "/endpoints/phase-6.php");
+
 /*
 * FUNCTIONS
 */
