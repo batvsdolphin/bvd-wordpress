@@ -43,6 +43,8 @@ function package_phase4_post($post)
 {
 
   $packaged = array();
+  $packaged["title"] = $post->post_title;
+  $packaged["author"] = ucfirst(get_the_author_meta( 'user_nicename', $post->post_author ));
   $packaged["object_photo"] = get_field('object_photo', $post->ID)["sizes"];
   $packaged["highlight_color"] = get_field('highlightColor', $post->ID);
   $packaged["story"] = get_field('story', $post->ID);
