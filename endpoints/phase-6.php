@@ -41,6 +41,8 @@ function package_phase6_post($post)
 {
 
   $packaged = array();
+  $packaged["title"] = $post->post_title;
+  $packaged["slug"] = $post->post_name;
   $packaged["emoji"] = get_field('emoji', $post->ID);
   $packaged["nate"] = package_phase6_contribution('nate', $post->ID);
   $packaged["sanju"] = package_phase6_contribution('sanju', $post->ID);
